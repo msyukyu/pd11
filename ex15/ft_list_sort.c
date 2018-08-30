@@ -1,28 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_list_size.c                                     :+:      :+:    :+:   */
+/*   ft_list_sort.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/26 19:48:42 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/30 11:46:53 by dabeloos         ###   ########.fr       */
+/*   Created: 2018/08/30 14:51:42 by dabeloos          #+#    #+#             */
+/*   Updated: 2018/08/30 14:53:25 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-int			ft_list_size(t_list *begin_list)
+void		ft_list_sort(t_list **begin_list, int (*cmp)())
 {
-	int		i;
-	t_list	*head;
-
-	i = 1;
-	head = begin_list;
-	while (head->next != NULL)
-	{
-		i++;
-		head = head->next;
-	}
-	return (i);
-}
+	

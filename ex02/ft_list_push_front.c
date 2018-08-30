@@ -6,14 +6,11 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/26 19:47:28 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/26 19:47:30 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/30 11:46:42 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_list.h"
-
-t_list		*ft_create_elem(void *data);
 
 void		ft_list_push_front(t_list **begin_list, void *data)
 {

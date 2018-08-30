@@ -6,11 +6,11 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/27 13:27:49 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/27 13:41:03 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/30 11:47:28 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "ft_list.h"
 
 void		ft_list_clear(t_list **begin_list)
 {
