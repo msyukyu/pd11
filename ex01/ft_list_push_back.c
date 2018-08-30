@@ -6,7 +6,7 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/26 19:22:49 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/30 11:46:32 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/30 17:22:45 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,17 @@
 
 void		ft_list_push_back(t_list **begin_list, void *data)
 {
-	t_list *item;
-	int		i;
-	t_list *head;
+	t_list	*item;
+	t_list	*head;
 
 	item = ft_create_elem(data);
-	head = *begin_list->next;
-	while (head != NULL)
+	if (*begin_list == NULL)
+	{
+		*begin_list = item;
+		return ;
+	}
+	head = *begin_list;
+	while (head->next != NULL)
 		head = head->next;
 	head->next = item;
 }
