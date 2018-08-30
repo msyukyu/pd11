@@ -6,7 +6,7 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/30 11:58:53 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/30 12:02:16 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/30 19:38:21 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,5 @@ t_list		*ft_list_find(t_list *begin_list, void *data_ref, int (*cmp)())
 			return (head);
 		head = head->next;
 	}
+	return (NULL);
 }
